@@ -1,0 +1,32 @@
+-content_for :head do
+  =stylesheet_link_tag 'home'
+  =javascript_include_tag 'home'
+
+%nav
+  %ul
+    %li O projekcie
+    %li Logowanie
+    %li Rejestracja
+
+%h1.main_logo.hide BIQMAP
+
+.popup.login
+  %h2 Panel logowania
+  %form
+    %table
+      %tr
+        %td
+          %label login:
+        %td
+          %input{:name => "login", :type => "text"}/
+      %tr
+        %td
+          %label hasło:
+        %td
+          %input{:name => "password", :type => "password"}/
+      %tr
+        %td{:colspan => "2"}
+          %span.button zaloguj się
+
+
+.popup.register.hide test
