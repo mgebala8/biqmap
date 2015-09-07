@@ -1,0 +1,10 @@
+/*
+*= require_tree ./admin
+*/
+
+body,html{
+ margin:0px;
+ padding:0px;
+ font-family:arial;
+ color:#fff;
+}

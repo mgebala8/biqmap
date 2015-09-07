@@ -1,0 +1,287 @@
+#projects_list{
+  width:100%;
+  overflow:hidden;
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height: 100px;
+  //background:url('<%=asset_path 'preloader3.gif' %>') no-repeat center;
+  background-size:60px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+
+  .project{
+    width:100px;
+    background-image: url('<%=asset_path 'map.jpg' %>');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:100px;
+    margin:10px;
+    float:left;
+    cursor: pointer;
+    position:relative;
+    display:block;
+
+    //po najechaniu na element dodajemy przysłone
+    &:hover{
+      &:after{
+        content:'';
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100px;
+        height: 100px;
+        background:rgba(255,255,255,0.2);
+      }
+    }
+
+    span{
+      display:block;
+      padding-top:105px;
+      text-align:center;
+      font-style: italic;
+      word-break: break-all;
+      width:100px;
+    }
+
+    .add{
+      background-image: url('<%=asset_path 'excel_add.jpg' %>');
+    }
+  }
+}
+
+#add_project{
+  display:block;
+  padding:10px;
+  width:800px;
+  margin:0px auto;
+
+  .options{
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    padding:10px;
+    float:right;
+    width:120px;
+    text-align:center;
+
+    button{
+      padding:10px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+  }
+
+  label{
+    display:block;
+    width:50%;
+    margin-top:10px;
+    margin-bottom:5px;
+  }
+
+  input{
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.5);
+    padding:5px;
+    width:200px;
+    font-size:13px;
+  }
+
+  textarea{
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.5);
+    width:790px;
+    height:200px;
+    display:block;
+    font-size:13px;
+    padding:5px;
+  }
+}
+
+//STYLE KONTENERA (przy podglądzie edycji mapy)
+.wrapper{
+  width:80%;
+  height:500px;
+  border:1px solid yellow;
+  position:relative;
+  clear:both;
+  margin:0px auto;
+
+  .button_excel{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    top:-42px;
+    margin-left:70px;
+    border: 1px solid red;
+    background: #f00;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .button_maps{
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    top:-42px;
+    border: 1px solid red;
+    margin-left:10px;
+    background: #f00;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  //style dotycząće edycji excela w tabeli
+  .excel_window{
+    width:100%;
+    height:auto;
+    background-color:white;
+    color:#000;
+    float:left;
+    overflow:scroll;
+
+    .legends{
+      width:300px;
+      height:100px;
+      border:1px solid red;
+    }
+
+    .layer{
+      padding:5px;
+      margin-bottom:5px;
+      background-color: #CBCBCB;
+      cursor:pointer;
+      overflow:hidden;
+
+      .right{
+        float: right;
+        border: 1px solid red;
+        margin: 0px;
+        margin-top: 10px;
+        background-color: #f00;
+        padding: 0px;
+      }
+
+      .left{
+        float: left;
+        border: 1px solid red;
+        margin: 0px;
+        margin-top: 10px;
+        background-color: #f00;
+        padding: 0px;
+      }
+
+      h2{
+        margin:0px;
+        padding:0px;
+      }
+
+      h3{
+        margin:5px;
+        padding:0px;
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      .edit{
+        display:none;
+      }
+
+      label{
+        cursor:pointer;
+      }
+
+      textarea{
+        width:300px;
+        height:150px;
+      }
+
+      select{
+        margin:0px 10px;
+      }
+
+      &:hover{
+        background:gray;
+      }
+
+    }
+
+    //style panelu zarządzania warstwami
+    .layers_options{
+      margin-bottom:5px;
+
+      button{
+        cursor: pointer;
+        margin:5px;
+        padding:10px;
+      }
+    }
+
+    .table{
+      clear:both;
+
+      table{
+        margin:0px;
+        border-collapse: collapse;
+        table-layout: fixed;
+
+        th{
+          cursor: pointer;
+          width:150px;
+        }
+
+        td,th {
+          padding:5px;
+          border:1px solid blue;
+          width:150px;
+
+          input{
+            background:blue;
+            width:100%;
+            border:0px;
+            outline:0px;
+            font-size:16px;
+            color:white;
+          }
+
+          span{
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+
+  //style dotyczące wyświetlenia mapy
+  .map_window{
+    width:100%;
+    height:auto;
+    background-color:gray;
+    float:left;
+    display:none;
+    .colors{
+      label{
+        clear:both;
+        width:100%;
+        margin:5px;
+      }
+      .color_list{
+        .colorpicker_box{
+          float:left;
+          margin-left:10px;
+        }
+      }
+    }
+  }
+
+  .colorpicker_box{
+    width:30px;
+    height:30px;
+    border:1px solid red;
+    margin:0px;
+    margin-left:10px;
+    cursor:pointer;
+  }
+
+}

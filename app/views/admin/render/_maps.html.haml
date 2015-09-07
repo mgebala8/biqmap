@@ -1,0 +1,22 @@
+%h2 Moje mapy:
+
+/.preloader
+
+#add_map
+
+  .map_options
+    %button.save zapisz
+    %button.delete usuń
+
+  %label nazwa:
+  %input{:name => 'name'}
+  %label content:
+  %textarea{:name => 'map_json'}
+  %label preview:
+  #preview_map podgląd mapy
+
+/kontener na pliki excel
+.maps_list
+
+/input do wysłania pliku
+%input#file_input{:url => "#{url_for :controller => 'excel'}", :style => "display:none", :type => "file"}

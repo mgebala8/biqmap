@@ -4,29 +4,17 @@
 
 %nav
   %ul
-    %li O projekcie
-    %li Logowanie
-    %li Rejestracja
+    %li{:target => 'about_project',:event => 'popup'} O projekcie
+    %li{:target => 'login',:event => 'popup'} Logowanie
+    %li{:target => 'register',:event => 'popup'} Rejestracja
 
 %h1.main_logo.hide BIQMAP
 
 .popup.login
-  %h2 Panel logowania
-  %form
-    %table
-      %tr
-        %td
-          %label login:
-        %td
-          %input{:name => "login", :type => "text"}/
-      %tr
-        %td
-          %label hasło:
-        %td
-          %input{:name => "password", :type => "password"}/
-      %tr
-        %td{:colspan => "2"}
-          %span.button zaloguj się
+  =render 'home/render/login'
 
+.popup.register
+  =render 'home/render/register'
 
-.popup.register.hide test
+.popup.about_project.window
+  =render 'home/render/about_project'

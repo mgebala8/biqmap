@@ -1,0 +1,123 @@
+.maps_list{
+  width:100%;
+  overflow:hidden;
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height: 100px;
+  background:url('<%=asset_path 'preloader3.gif' %>') no-repeat center;
+  background-size:60px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+
+  .map{
+    width:100px;
+    background-image: url('<%=asset_path 'map.jpg' %>');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:100px;
+    margin:10px;
+    float:left;
+    cursor: pointer;
+    position:relative;
+    display:none;
+    border-top:5px solid rgba(0,0,0,0);
+
+    //po najechaniu na element dodajemy przysłone
+    &:hover{
+      &:after{
+        content:'';
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100px;
+        height: 100px;
+        background:rgba(255,255,255,0.2);
+      }
+    }
+
+    span{
+      display:block;
+      padding-top:105px;
+      text-align:center;
+      font-style: italic;
+      word-break: break-all;
+      width:100px;
+    }
+  }
+
+  .map.add{
+    background-image: url('<%=asset_path 'excel_add.jpg' %>');
+  }
+}
+
+#add_map{
+
+  display:none;
+  padding:10px;
+  width:800px;
+  margin:0px auto;
+
+  .map_options{
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+    padding:10px;
+    float:right;
+    width:130px;
+    text-align:center;
+
+    button{
+      padding:10px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+  }
+
+  label{
+    display:block;
+    width:50%;
+    margin-top:10px;
+    margin-bottom:5px;
+  }
+
+  input{
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.5);
+    padding:5px;
+    width:200px;
+    font-size:13px;
+  }
+
+  textarea{
+    border:1px solid #fff;
+    background:rgba(255,255,255,0.5);
+    width:790px;
+    height:200px;
+    display:block;
+    font-size:13px;
+    padding:5px;
+  }
+
+  #preview_map{
+    padding:5px;
+    width:790px;
+    height:auto;
+    border:1px solid #fff;
+
+    svg{
+      width:790px;
+
+      path{
+        fill: #CCCCCC;
+        fill-opacity: 2;
+        stroke:white;
+        stroke-opacity: 1;
+        stroke-width:0.5;
+        &:hover{
+          fill: #f00;
+        }
+      }
+    }
+
+  }
+
+}

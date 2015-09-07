@@ -1,0 +1,7 @@
+%h2 Moje pliki excel:
+
+/kontener na pliki excel
+.excel_list
+
+/input do wysłania pliku
+%input#file_input{:url => "#{url_for :controller => 'excel'}", :style => "display:none", :type => "file"}

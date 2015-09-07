@@ -4,7 +4,14 @@ Rails.application.routes.draw do
   get 'embed/:id', to: 'home#embed'
 
   #namespace :admin do
+  get 'edit', to: 'admin#index'
+  get 'logout', to: 'admin#logout'
+
+  #ścieżki do plików związane z restem
   scope '/rest' do
+    post 'user/login', to: 'user#login'
+    post 'excel/parse', to: 'excel#parse'
+    get 'excel/test', to: 'excel#test'
     resources :user,:excel,:project,:map
   end
 

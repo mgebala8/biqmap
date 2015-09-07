@@ -1,0 +1,68 @@
+#upload_box{
+  width:200px;
+  height:200px;
+  border:5px dotted red;
+  margin:50px auto;
+  background:rgba(255,255,255,.2);
+  cursor:pointer;
+
+  &:hover{
+    background:rgba(255,255,255,.4);
+  }
+}
+
+.excel_list{
+
+  width:100%;
+  overflow:hidden;
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height: 100px;
+  background:url('<%=asset_path 'preloader3.gif' %>') no-repeat center;
+  background-size:60px;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+
+  .file{
+    width:100px;
+    height:auto;
+    min-height:100px;
+    background-image: url('<%=asset_path 'excel.jpg' %>');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:100px;
+    margin:10px;
+    float:left;
+    cursor: pointer;
+    position:relative;
+    display:none;
+    border-top:5px solid rgba(0,0,0,0);
+
+    //po najechaniu na element dodajemy przysłone
+    &:hover{
+      &:after{
+        content:'';
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100px;
+        height: 100px;
+        background:rgba(255,255,255,0.2);
+      }
+    }
+
+    span{
+      display:block;
+      padding-top:105px;
+      text-align:center;
+      font-style: italic;
+      word-break: break-all;
+      width:100px;
+    }
+  }
+
+  .file.add{
+    background-image: url('<%=asset_path 'excel_add.jpg' %>');
+  }
+
+}

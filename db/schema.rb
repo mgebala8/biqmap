@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722121559) do
+ActiveRecord::Schema.define(version: 20150804101029) do
 
   create_table "excels", force: :cascade do |t|
-    t.string   "hash_name"
-    t.string   "source"
+    t.string   "excel_json"
+    t.string   "name"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150722121559) do
 
   create_table "maps", force: :cascade do |t|
     t.string   "name"
-    t.text     "content"
+    t.text     "map_json"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -31,12 +31,15 @@ ActiveRecord::Schema.define(version: 20150722121559) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
-    t.text     "json_content"
+    t.text     "project_json"
     t.integer  "map_id"
     t.integer  "user_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "excel_id"
   end
+
+  add_index "projects", ["excel_id"], name: "index_projects_on_excel_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "login"

@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
@@ -16,6 +15,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0.5'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 #gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -31,8 +32,17 @@ gem 'unicorn'
 
 gem 'haml', '~> 4.0.6'
 
+gem 'i18n', '~> 0.7.0'
+
+#gem odpowiedzialny za parsowanie plików excel
+gem 'spreadsheet', '~> 1.0.4'
+
+gem 'jquery-colorpicker-rails'
+
+#gem 'autoprefixer-rails', '~> 5.2.1.1'
+
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+#gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

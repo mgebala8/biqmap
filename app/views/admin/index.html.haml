@@ -1,0 +1,109 @@
+-content_for :head do
+  =stylesheet_link_tag 'admin'
+  =javascript_include_tag 'admin'
+
+%nav
+  %ul
+    %li{:target => 'projects',:event => 'popup'} Moje projekty
+    %li{:target => 'maps',:event => 'popup'} Moje mapy SVG
+    %li{:target => '',:event => ''} Moje mapy HEX
+    %li{:target => 'excel',:event => 'popup'} Moje pliki excel
+    %li.logout
+      =link_to 'wyloguj się', :action => 'logout'
+    %span
+      ='[ ' + session[:user]['email'] + ' ]'
+
+%h2 jesteś zalogowany / strefa chroniona
+
+/pełna lista wszystkich projektów z ich dodawaniem i możliwością edycji oraz podglądu
+#excel.popup.window
+  =render 'admin/render/excel'
+
+#maps.popup.window
+  =render 'admin/render/maps'
+
+/lista wszystkich projektów
+#projects.project.popup.window
+  %h2 MOJE PROJEKT:
+
+  #myElemToClick{:style => 'width: 30px;height: 30px;border: 1px solid red;margin:10px;cursor:pointer;',:color => ''}
+
+  #projects_list
+    .project.add{:target => 'project-maps',:event => 'popup'}
+      %span nowy projekt
+
+/wybieramy konkretną mapę dla nowego projektu
+#project-maps.project.popup.window
+  %h2 WYBIERZ MAPĘ:
+
+  .button_nav
+    %button.next{:target => 'project-excel',:disabled => 'disabled'} dalej
+
+  /lista map uzytkownika
+  .maps_list
+
+/wybieramy konkretny plik dla nowego projektu
+#project-excel.project.popup.window
+  %h2 WYBIERZ PLIK EXCEL:
+
+  .button_nav
+    %button.back{:target =>'project-maps'} wstecz
+    %button.next{:target =>'project-edit',:disabled => 'disabled'} dalej
+
+  /lista plików excel
+  .excel_list
+
+/panel edycji konkretnego projektu
+#project-edit.project.popup.window
+  %h2 PANEL EDYCJI PROJEKTU:
+
+  /wyświetlenie nawigacji
+  .button_nav
+    %button.back{:target =>'project-excel'} wstecz
+
+  .wrapper
+
+    %span.button_excel excel
+    %span.button_maps map
+
+    .container
+
+      /okno edycji ecela
+      .excel_window
+
+        /opcje dotyczące projektu
+        .layers_options
+          %button.add nowa warstwa
+          %button.remove usuń warstwę
+
+        .layers
+
+        /wybrana tabela
+        .table
+
+      /okno edycji mapy
+      .map_window
+        .colors
+          %h3 Panel zarządzania kolorami
+
+          %label lista kolorów:
+          %br/
+          .color_list
+          %br/
+
+          %label ilość kolorów:
+          %br/
+          %select
+            %option{:value => "1"} 1
+            %option{:value => "2"} 2
+            %option{:value => "3"} 3
+            %option{:value => "5"} 5
+            %option{:value => "7"} 7
+            %option{:value => "9"} 9
+
+          %label paleta:
+          %br/
+          .colorpicker_box.palette
+          %br/
+
+        .project
