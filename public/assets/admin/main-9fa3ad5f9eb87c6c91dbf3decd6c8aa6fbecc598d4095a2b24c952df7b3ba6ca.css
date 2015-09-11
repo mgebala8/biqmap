@@ -1,0 +1,33 @@
+/* line 3, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/main.scss.erb */
+body {
+  background-color: #000;
+  background-image: url("/assets/main_background-31d2f509ed2a30c9378c29bd1f92eba37bf90337a9775466a797d4c167c68bee.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+/* line 10, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/main.scss.erb */
+body .main_logo {
+  width: 200px;
+  text-align: center;
+  font-size: 150px;
+  margin: 150px auto;
+  border-left: 10px solid #fff;
+}
+/* line 18, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/main.scss.erb */
+body > h2 {
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 23, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/main.scss.erb */
+body footer {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+/* line 31, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/main.scss.erb */
+body .hide {
+  display: none;
+}

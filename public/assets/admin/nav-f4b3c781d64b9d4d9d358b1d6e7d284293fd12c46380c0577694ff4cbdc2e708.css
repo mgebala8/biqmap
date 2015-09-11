@@ -1,0 +1,44 @@
+/* line 3, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(0, 147, 0, 0.4);
+}
+/* line 12, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul {
+  margin: 0px;
+  list-style: none;
+}
+/* line 17, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul li {
+  padding: 0px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 22, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 26, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 30, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 37, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul li:nth-child(5) {
+  float: right;
+}
+/* line 41, /media/sf_ruby.local/biqmap2/app/assets/stylesheets/admin/nav.scss.erb */
+nav ul span {
+  display: block;
+  float: right;
+  font-style: italic;
+  margin: 0px 10px;
+}
