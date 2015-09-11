@@ -42,8 +42,13 @@ gem 'jquery-colorpicker-rails'
 
 # Use Capistrano for deployment
 #gem 'capistrano-rails', group: :development
+
 group :production do
   gem 'mysql2', '~> 0.3.20'
+end
+
+group :development do
+  gem 'capistrano', '~> 3.4.0'
 end
 
 group :development, :test do
