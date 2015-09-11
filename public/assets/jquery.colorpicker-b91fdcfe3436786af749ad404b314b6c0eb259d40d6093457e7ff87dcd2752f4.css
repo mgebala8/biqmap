@@ -1,0 +1,264 @@
+/* line 1, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker,
+.ui-dialog.ui-colorpicker {
+  width: auto;
+  white-space: nowrap;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 13, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-inline {
+  position: static;
+}
+
+/* line 17, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-buttonset {
+  float: left;
+  margin-left: .4em;
+}
+
+/* line 22, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-buttonset .ui-button {
+  margin: .5em 0 .5em 0;
+  cursor: pointer;
+}
+
+/* line 27, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+/* line 36, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 45, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-buttonpane button.ui-colorpicker-current {
+  float: left;
+}
+
+/* line 49, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker table {
+  width: 100%;
+  font-size: 100%;
+  /* Reset browser table font-size */
+  margin: 0;
+}
+
+/* line 55, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker table td {
+  vertical-align: top;
+}
+
+/* line 59, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-padding-left {
+  padding-left: 10px;
+}
+
+/* line 62, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-padding-top {
+  padding-top: 10px;
+}
+
+/* line 66, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-border {
+  border: 1px inset;
+  display: inline-block;
+}
+
+/* Bar & map */
+/* line 72, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map > *,
+.ui-colorpicker-bar > * {
+  position: absolute;
+  cursor: crosshair;
+}
+
+/* line 78, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map-pointer,
+.ui-colorpicker-bar-pointer {
+  position: absolute;
+}
+
+/* Map */
+/* line 83, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map,
+.ui-colorpicker-map > * {
+  display: block;
+  width: 256px;
+  height: 256px;
+  overflow: hidden;
+}
+
+/* line 91, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map-layer-1,
+.ui-colorpicker-map-layer-2 {
+  background: url("/assets/colorpicker/map-53c9f67cd95713394deb5a2459bcca971aacdf7dd6eeb55c9720df0fc31f6e92.png") no-repeat;
+}
+
+/* line 96, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map-128,
+.ui-colorpicker-map-128 > * {
+  width: 128px;
+  height: 128px;
+}
+
+/* line 102, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map-128 .ui-colorpicker-map-layer-1,
+.ui-colorpicker-map-128 .ui-colorpicker-map-layer-2 {
+  background: url("/assets/colorpicker/128/map-933c0793b40a44ffc5a936eb241660a61ecea25e88ba66247ff7c16da631136c.png") no-repeat;
+}
+
+/* line 107, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map-layer-alpha {
+  background: url("/assets/colorpicker/map-opacity-bf25985affe2233dc3baa4ee59e29c1fbd7a48cf07493902d14a1ac344ed6f28.png");
+}
+
+/* line 111, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-map-pointer {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("/assets/colorpicker/map-pointer-2fd7adf81eae3c71d0abf0b7a7523ea4fc69d2a0907089bd9e10246fc9b923c9.png") no-repeat;
+}
+
+/* Bar */
+/* line 119, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar,
+.ui-colorpicker-bar > * {
+  display: block;
+  width: 20px;
+  height: 256px;
+  overflow: hidden;
+  background-repeat: repeat-x;
+}
+
+/* line 128, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-128,
+.ui-colorpicker-bar-128 > * {
+  height: 128px;
+}
+
+/* line 133, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-layer-1,
+.ui-colorpicker-bar-layer-2,
+.ui-colorpicker-bar-layer-3,
+.ui-colorpicker-bar-layer-4 {
+  background: url("/assets/colorpicker/bar-889a9a3b55fd3b28469c7f801a8257cd7358c1b0dbbac9fc8c57ea20b1510d71.png") repeat-x;
+}
+
+/* line 140, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-128 .ui-colorpicker-bar-layer-1,
+.ui-colorpicker-bar-128 .ui-colorpicker-bar-layer-2,
+.ui-colorpicker-bar-128 .ui-colorpicker-bar-layer-3,
+.ui-colorpicker-bar-128 .ui-colorpicker-bar-layer-4 {
+  background: url("/assets/colorpicker/128/bar-610494ac3d373aa8f580d8285823d572f5865ac8ab710912639fe2d5b2987b43.png") repeat-x;
+}
+
+/* line 147, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-layer-alpha {
+  background: url("/assets/colorpicker/bar-opacity-8f60ea4618604a817825d8793f2aa4fbc69b9cf894df386b2a8cf64e6c10dc47.png");
+}
+
+/* line 151, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-layer-alphabar {
+  background: url("/assets/colorpicker/bar-alpha-7315111b08a330a9c3ece3262ef4b2bc630e64b02a05d9ee5c3bd30c777042ed.png");
+}
+
+/* line 155, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-128 .ui-colorpicker-bar-layer-alphabar {
+  background: url("/assets/colorpicker/128/bar-alpha-a04f07cb3f175cbd4d6ad1333898064e7fa8ec67393f1abc6c41496d723f07a1.png");
+}
+
+/* line 159, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-bar-pointer {
+  display: inline-block;
+  width: 20px;
+  height: 7px;
+  background: url("/assets/colorpicker/bar-pointer-53fee92de8f1310bb998e2f60f26a6499490f29a7ddba800c86240bb96add355.png") no-repeat;
+}
+
+/* Preview */
+/* line 167, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-preview {
+  text-align: center;
+}
+
+/* line 171, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-preview-initial {
+  cursor: pointer;
+}
+
+/* line 175, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-preview-initial,
+.ui-colorpicker-preview-current {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+}
+
+/* line 182, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-preview-initial-alpha,
+.ui-colorpicker-preview-current-alpha {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  background: url("/assets/colorpicker/preview-opacity-cd41e45e0a93de6a6eb04fb2617ca5416f278e2c6e544294831ebf73675b97c9.png") repeat;
+}
+
+/* Inputs */
+/* line 191, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-rgb label,
+.ui-colorpicker-hsv label,
+.ui-colorpicker-hsl label,
+.ui-colorpicker-lab label,
+.ui-colorpicker-cmyk label,
+.ui-colorpicker-alpha label {
+  width: 1.5em;
+  display: inline-block;
+}
+
+/* line 201, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-number {
+  margin: .1em;
+  width: 4em;
+}
+
+/* Hex */
+/* line 207, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-hex {
+  text-align: center;
+}
+
+/* Swatches */
+/* line 212, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-swatches {
+  height: 256px;
+  overflow: auto;
+  background-color: #f8f8f8;
+}
+
+/* line 218, /home/marcin/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/jquery-colorpicker-rails-1.0.16.5/app/assets/stylesheets/jquery.colorpicker.scss.erb */
+.ui-colorpicker-swatch {
+  cursor: pointer;
+  float: left;
+  width: 11px;
+  height: 11px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}

@@ -1,0 +1,52 @@
+/* line 1, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/admin/popup.scss.erb */
+.popup {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  padding: 5px;
+  margin-left: -200px;
+  border-left: 5px solid rgba(0, 147, 0, 0.4);
+  display: none;
+  width: 400px;
+  height: auto;
+  background: #3e4759;
+  z-index: 999;
+  box-sizing: border-box;
+}
+/* line 16, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/admin/popup.scss.erb */
+.popup h2 {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  padding: 5px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* line 30, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/admin/popup.scss.erb */
+.popup .alert ul {
+  font-size: 12px;
+  background-color: #0f0;
+  padding: 5px;
+}
+/* line 36, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/admin/popup.scss.erb */
+.popup .alert ul.error {
+  background-color: #f00;
+}
+/* line 42, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/admin/popup.scss.erb */
+.popup table {
+  margin: 10px auto;
+  width: 200px;
+}
+/* line 46, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/admin/popup.scss.erb */
+.popup table span.button {
+  display: block;
+  cursor: pointer;
+  background-color: grey;
+  padding: 5px;
+  float: right;
+  margin-bottom: 10px;
+}

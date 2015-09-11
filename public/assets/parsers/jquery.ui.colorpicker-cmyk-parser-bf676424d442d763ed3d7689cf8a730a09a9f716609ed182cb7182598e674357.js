@@ -1,0 +1,1 @@
+jQuery(function(r){r.colorpicker.parsers.CMYK=function(s){var e=/^cmyk\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/.exec(s);return e?(new r.colorpicker.Color).setCMYK(e[1]/255,e[2]/255,e[3]/255,e[4]/255):void 0}});

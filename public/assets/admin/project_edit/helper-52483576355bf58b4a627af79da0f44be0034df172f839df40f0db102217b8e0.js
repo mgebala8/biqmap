@@ -1,0 +1,1 @@
+function _helper(){this.random_color=function(){for(var r="0123456789ABCDEF".split(""),n="#",t=0;6>t;t++)n+=r[Math.floor(16*Math.random())];return n},this.in_array_exist=function(r,n){for(var t=0;t<r.length;t++)if(r[t]===n||""==r[t])return!0;return!1}}

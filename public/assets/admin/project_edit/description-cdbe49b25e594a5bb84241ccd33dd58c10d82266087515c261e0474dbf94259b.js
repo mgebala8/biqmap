@@ -1,0 +1,1 @@
+function _description(){this.list=Array(""),this.change=function(i,t){this.list[i]=t},this.add=function(i){i=i||"",this.list.push(i)},this.remove=function(i){this.list.splice(i,1)}}

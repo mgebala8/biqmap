@@ -1,0 +1,161 @@
+/* line 3, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/main.scss.erb */
+body {
+  background-color: #000;
+  background-image: url("/assets/main_background-31d2f509ed2a30c9378c29bd1f92eba37bf90337a9775466a797d4c167c68bee.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+/* line 9, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/main.scss.erb */
+body .main_logo {
+  width: 200px;
+  text-align: center;
+  font-size: 150px;
+  margin: 150px auto;
+  border-left: 10px solid #fff;
+}
+/* line 17, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/main.scss.erb */
+body footer {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+/* line 25, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/main.scss.erb */
+body .hide {
+  display: none;
+}
+/* line 3, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/nav.scss.erb */
+nav {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 11, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/nav.scss.erb */
+nav ul {
+  margin: 0px;
+  list-style: none;
+}
+/* line 15, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/nav.scss.erb */
+nav ul li {
+  padding: 0px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 20, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/nav.scss.erb */
+nav ul li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 24, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/nav.scss.erb */
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 1, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.popup {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  padding: 5px;
+  margin-left: -200px;
+  border-left: 5px solid #fff;
+  display: none;
+  width: 400px;
+  height: auto;
+  background: #3e4759;
+  z-index: 999;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.75);
+}
+/* line 15, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.popup h2 {
+  display: block;
+  width: 100%;
+  margin: 0px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 20px;
+}
+/* line 28, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.popup .alert ul {
+  font-size: 12px;
+  background-color: #0f0;
+  padding: 5px;
+}
+/* line 34, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.popup .alert ul.error {
+  background-color: #f00;
+}
+/* line 40, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.popup table {
+  margin: 10px auto;
+  width: 200px;
+}
+/* line 44, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.popup table span.button {
+  display: block;
+  cursor: pointer;
+  background-color: grey;
+  padding: 5px;
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* line 55, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.window {
+  width: 960px;
+  height: 500px;
+  background: rgba(87, 77, 102, 0.9);
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -480px;
+  display: none;
+}
+/* line 66, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.window h2 {
+  margin: 10px;
+  padding: 0px;
+}
+/* line 71, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/popup.scss */
+.window p {
+  margin: 10px;
+  padding: 10px;
+}
+/* line 1, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/window.scss */
+.window {
+  width: 960px;
+  height: 500px;
+  background: rgba(87, 77, 102, 0.9);
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -480px;
+  display: none;
+}
+/* line 12, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/window.scss */
+.window h2 {
+  margin: 10px;
+  padding: 0px;
+}
+/* line 17, /media/sf_ruby.local/test/biqmap/app/assets/stylesheets/home/window.scss */
+.window p {
+  margin: 10px;
+  padding: 10px;
+}
+ /*
+
+ */
+
+
+ body,html{
+ 	margin:0px;
+ 	padding:0px;
+ 	font-family:arial;
+ 	color:#fff;
+ }
