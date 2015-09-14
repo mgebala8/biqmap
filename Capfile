@@ -3,7 +3,7 @@ require 'capistrano/setup'
 
 # Include default deployment tasks
 require 'capistrano/deploy'
-require 'capistrano/rbenv'
+#require 'capistrano/rbenv'
 
 # Include tasks from other gems included in your Gemfile
 #
@@ -16,11 +16,11 @@ require 'capistrano/rbenv'
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
-# require 'capistrano/rvm'
-# require 'capistrano/rbenv'
-# require 'capistrano/chruby'
+require 'capistrano/rvm'
 require 'capistrano/bundler'
 require 'capistrano/rails'
+# require 'capistrano/rbenv'
+# require 'capistrano/chruby'
 # require 'capistrano/rails/migrations'
 # require 'capistrano/passenger'
 
