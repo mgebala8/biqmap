@@ -10,6 +10,8 @@
 /public/excel/*
 /config/database.yml
 /config/secrets.yml
+/config/database_cap.yml
+/config/secrets_cap.yml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
