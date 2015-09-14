@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:mgebala8/biqmap.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, '/var/www/biqmap_cap'
+ set :deploy_to, '~/home/www/biqmap_cap'
 
 # Default value for :scm is :git
 # set :scm, :git
